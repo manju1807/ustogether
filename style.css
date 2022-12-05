@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body
+{
+    font-family:'Open Sans';
+    color:white;
+}
+section
+{
+position:relative;
+height:100%;
+width:100%;
+background:url("./bg.jpg");
+background-size:cover;
+background-position:center center;
+}
+
+.form-container
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0,.3),rgba(0,0,0,0,.3));
+
+}
