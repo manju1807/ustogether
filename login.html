@@ -8,12 +8,12 @@
     <title>DevStudios</title>
     <link rel="stylesheet" href="loginstylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="javascript" href="index.js">
 </head>
 
 <body>
     <header>
         <a href="#" class="brand">DevStudios</a>
+        <div class="menu"></div>
         <div class="navigation">
             <div class="navigation-items">
                 <a href="#">Home</a>
@@ -26,6 +26,7 @@
     </header>
 
     <section class="home">
+        <video class="video-slide" src="" autoplay muted loop> </video>
         <div class="content">
             <h1>Learning<br><span>Made Easy.</span></h1>
             <p>our E-learning websites provide users with educational materials and resources, such as courses,tutorials, and tests, to learn at their own pace. They are ideal .for those who are unable to attend traditional classes due to time or distance
@@ -39,7 +40,16 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
     </section>
-    <script src="index.js"></script>
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+
+        });
+    </script>
 </body>
 
 </html>
