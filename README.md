@@ -1,2 +1,0 @@
-# ustogether
-simple landing page
